@@ -16,7 +16,7 @@ const HomePage = () => {
     return <div>
         <SearchBar search={searchResult}/>
         {searchData!=="" ? <ResultPage data={searchData}/> : 
-        <List title="Edho Onnu"/>}
+        <div></div>}
     </div>
 }
 
