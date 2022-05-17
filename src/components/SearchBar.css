@@ -1,0 +1,35 @@
+.searchbar {
+    margin: auto;
+    width: 80%;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+}
+
+label {
+    font-size: x-large;
+}
+
+input {
+    min-height: 7vh;
+    width: 90%;
+    margin: 1%;
+    margin-right: 0%;
+    justify-content: start;
+}
+
+.search-button {
+    background-color: orange;
+    color: white;
+    font-size: 90%;
+    border: none;
+    min-height: 7vh;
+    width: 7%;
+    margin-top: 1%;
+    border-radius: 4px;
+}
+
+.search-button:hover {
+    cursor: pointer;
+    background-color: darkorange;
+}
