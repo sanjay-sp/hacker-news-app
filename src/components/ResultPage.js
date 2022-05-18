@@ -15,6 +15,7 @@ const ResultPage = ({data}) => {
             title={item.title}
             points={item.points}
             author={item.author}
+            date={item.created_at_i}
             /></Link>)}
     </div>
 }

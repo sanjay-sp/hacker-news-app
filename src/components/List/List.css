@@ -35,7 +35,8 @@ a {
     padding: 0%;
     align-items: baseline;
     justify-content: baseline;
-    color: grey;
+    color: rgb(81, 81, 81);
+    margin-top: 0.5%;
 }
 
 ::-webkit-scrollbar {
