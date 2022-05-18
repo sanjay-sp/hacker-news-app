@@ -28,6 +28,7 @@ input {
     width: 7%;
     margin-top: 1%;
     border-radius: 4px;
+    margin-left: 1%;
 }
 
 .search-button:hover {
