@@ -11,12 +11,16 @@ const ResultPage = ({data}) => {
         } 
     }
     return <div className="newscontainer">
-        {data.map((item)=><Link to={`/${item.objectID}`}><List key={item.objectID} 
-            title={item.title || item.story_title}
-            points={item.points}
-            author={item.author}
-            date={item.created_at_i}
-            /></Link>)}
+        {data.map((item)=>{
+            if (item.title !== "") {
+                return <Link to={`/${item.objectID}`}><List key={item.objectID} 
+                title={item.title}
+                points={item.points}
+                author={item.author}
+                date={item.created_at_i}
+                /></Link>  
+            }
+        })}
     </div>
 }
 

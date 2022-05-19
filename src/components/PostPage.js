@@ -11,16 +11,7 @@ const NewsPage = () => {
     useEffect(()=>{
         fetch(`http://hn.algolia.com/api/v1/items${window.location.pathname}`).then((res)=>{
             return res.json();  
-        }).then((data)=>{
-            if (data.title==null) {
-                // fetch(`http://hn.algolia.com/api/v1/items${result.story_id}`).then((resp)=> {
-                //     return resp.json()
-                // })
-                window.location.replace(`/${data.story_id}`)
-            } else {
-                setPost(data);
-            }
-           });
+        }).then((data)=>{setPost(data)});
     },[])
 
     
