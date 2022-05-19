@@ -1,0 +1,12 @@
+.sectionImage {
+    margin: auto;
+    margin-top: 10%;
+    max-width: 10vw;
+    max-height: 10vh;
+    opacity: 0.5;
+}
+
+.sectionText {
+    margin-top: 2%;
+    color: lightgray;
+}

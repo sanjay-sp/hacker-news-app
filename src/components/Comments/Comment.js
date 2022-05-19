@@ -1,5 +1,5 @@
 import React from "react";
-import {timeConverter} from "../utils/timeConverter";
+import {timeConverter} from "../../utils/timeConverter";
 import './Comment.css';
 
 const Comment = ({comment, author, date}) => {

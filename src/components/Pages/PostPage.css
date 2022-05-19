@@ -14,21 +14,11 @@
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
-
-.comments {
-    text-align: left;
-    width: 70%;
-    margin: 3%;
-    margin-top: 5%;
 }
 
-
-.postDetails {
-    display: inline;
-    margin: auto;
-    margin-top: 5%;
-    margin-right: 1%;
+.point-num {
+    color: orange;
+    font-weight: 600;
 }
 
 .postUrl {
@@ -41,7 +31,16 @@
     text-decoration: underline;
 }
 
-.point-num {
-    color: orange;
-    font-weight: 600;
+.postDetails {
+    display: inline;
+    margin: auto;
+    margin-top: 5%;
+    margin-right: 1%;
+}
+
+.comments {
+    text-align: left;
+    width: 70%;
+    margin: 3%;
+    margin-top: 5%;
 }

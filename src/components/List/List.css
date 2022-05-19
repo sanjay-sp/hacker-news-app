@@ -21,6 +21,28 @@ a {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
 }
 
+.h4 {
+  padding: 0%;
+  margin: 0%;
+  margin-right: .5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.points {
+  font-size: 0.8em;
+  margin: 0%;
+  padding: 0%;
+  align-items: baseline;
+  justify-content: baseline;
+  color: rgb(81, 81, 81);
+  margin-top: 0.5%;
+}
+
+.points-time {
+display: flex;
+}
+
 .list-time {
   margin-left: 1%;
   font-size: 0.8em;
@@ -30,27 +52,6 @@ a {
   margin-top: 0.5%;
 }
 
-.h4 {
-    padding: 0%;
-    margin: 0%;
-    margin-right: .5%;
-    align-items: center;
-    justify-content: center;
-}
-
-.points {
-    font-size: 0.8em;
-    margin: 0%;
-    padding: 0%;
-    align-items: baseline;
-    justify-content: baseline;
-    color: rgb(81, 81, 81);
-    margin-top: 0.5%;
-}
-
-.points-time {
-  display: flex;
-}
 ::-webkit-scrollbar {
     width: 5px;
   }

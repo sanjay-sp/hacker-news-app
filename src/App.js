@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
-import HomePage from './components/HomePage';
-import PostPage from './components/PostPage';
+import HomePage from './components/Pages/HomePage';
+import PostPage from './components/Pages/PostPage';
 
 const App = () => {
   return (

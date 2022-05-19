@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import Comment from './Comment';
-import { urlConverter } from '../utils/urlConverter';
+import Comment from '../Comments/Comment';
+import { urlConverter } from '../../utils/urlConverter';
 import './PostPage.css';
 
-const NewsPage = () => {
+const PostPage = () => {
     
     const [post,setPost] = useState("");
-    var parser = new DOMParser();
-    console.log(post)
+
     useEffect(()=>{
-        fetch(`http://hn.algolia.com/api/v1/items${window.location.pathname}`).then((res)=>{
+        fetch(`https://hn.algolia.com/api/v1/items${window.location.pathname}`).then((res)=>{
             return res.json();  
         }).then((data)=>{setPost(data)});
     },[])
@@ -29,7 +28,7 @@ const NewsPage = () => {
                 const htmStr = item.text;
                 const doc = new DOMParser().parseFromString(htmStr, "text/html");
                 try {
-                    return <Comment comment={doc.body.getElementsByTagName('p')[0].innerText}
+                    return <Comment key={item.objectID} comment={doc.body.getElementsByTagName('p')[0].innerText}
                             author={item.author} date={item.created_at_i}/>
                 } catch (error) {
                     console.log(error);
@@ -40,4 +39,4 @@ const NewsPage = () => {
     </>
 }
 
-export default NewsPage;
+export default PostPage;

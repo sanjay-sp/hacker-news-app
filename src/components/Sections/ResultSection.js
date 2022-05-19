@@ -1,15 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import List from "./List/List";
-import './ResultPage.css';
+import List from "../List/List";
+import './ResultSection.css';
 
-const ResultPage = ({data}) => {
-    console.log(data)
-    const titleCheck = (title) => {
-        if(title!==''){
-            return title
-        } 
-    }
+const ResultSection = ({data}) => {
+
     return <div className="newscontainer">
         {data.map((item)=>{
             if (item.title !== "") {
@@ -24,4 +19,4 @@ const ResultPage = ({data}) => {
     </div>
 }
 
-export default ResultPage;
+export default ResultSection;
