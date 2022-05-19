@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-      <nav>Hacker News</nav>
+      <nav><a href='/'>Hacker News</a></nav>
         <Routes>
           <Route path="/" exact element={<HomePage/>}/>
           <Route path="/:id" element={<PostPage/>}/>

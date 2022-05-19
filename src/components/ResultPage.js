@@ -12,7 +12,7 @@ const ResultPage = ({data}) => {
     }
     return <div className="newscontainer">
         {data.map((item)=><Link to={`/${item.objectID}`}><List key={item.objectID} 
-            title={item.title}
+            title={item.title || item.story_title}
             points={item.points}
             author={item.author}
             date={item.created_at_i}

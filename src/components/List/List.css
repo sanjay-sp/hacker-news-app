@@ -21,6 +21,15 @@ a {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
 }
 
+.list-time {
+  margin-left: 1%;
+  font-size: 0.8em;
+  align-items: baseline;
+  justify-content: baseline;
+  color: gray;
+  margin-top: 0.5%;
+}
+
 .h4 {
     padding: 0%;
     margin: 0%;
@@ -39,6 +48,9 @@ a {
     margin-top: 0.5%;
 }
 
+.points-time {
+  display: flex;
+}
 ::-webkit-scrollbar {
     width: 5px;
   }
