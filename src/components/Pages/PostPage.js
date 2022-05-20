@@ -27,9 +27,10 @@ const PostPage = () => {
             {post.children.map((item)=> {
                 const htmStr = item.text;
                 const doc = new DOMParser().parseFromString(htmStr, "text/html");
+                console.log(item);
                 try {
                     return <Comment key={item.objectID} comment={doc.body.getElementsByTagName('p')[0].innerText}
-                            author={item.author} date={item.created_at_i}/>
+                            author={item.author} date={item.created_at_i} children={item.children}/>
                 } catch (error) {
                     console.log(error);
                 }
