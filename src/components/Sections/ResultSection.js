@@ -8,7 +8,7 @@ const ResultSection = ({data}) => {
     return <div className="newscontainer">
         {data.map((item)=>{
             if (item.title !== "") {
-                return <Link to={`/${item.objectID}`}><List key={item.objectID} 
+                return <Link to={`/${item.objectID}`} target="_blank"><List key={item.objectID} 
                 title={item.title}
                 points={item.points}
                 author={item.author}

@@ -7,7 +7,6 @@ import SearchIcon from '../../public/search-icon.png';
 
 const HomePage = () => {
     const [searchData,setSearchData] = useState("");
-    console.log(searchData);
 
     const searchResult = async (value) => {
         await fetch(`https://hn.algolia.com/api/v1/search?query=${value}`).then((res) => {

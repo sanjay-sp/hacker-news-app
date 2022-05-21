@@ -40,7 +40,8 @@
 
 .comments {
     text-align: left;
-    width: 70%;
+    width: 80%;
     margin: 3%;
     margin-top: 5%;
+    overflow-x: hidden;
 }
