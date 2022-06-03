@@ -69,3 +69,25 @@ display: flex;
   ::-webkit-scrollbar-thumb:hover {
     background: darkgray; 
   }
+
+  @media (orientation: portrait) {
+    .list {
+        margin-top: 5%;
+        padding-bottom: 3%;
+
+    }
+    .points-time {
+      padding-bottom: 2%;
+    }
+    @media (max-width: 350px) {
+      .list {
+        font-size: 1rem;
+        height: 16vh;
+        margin-top: 5%;
+        padding-bottom: 1%;
+    }
+    .points-time {
+      margin-top: 4%;
+    }
+    }
+}

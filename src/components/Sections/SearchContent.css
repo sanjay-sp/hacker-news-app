@@ -10,3 +10,9 @@
     margin-top: 2%;
     color: lightgray;
 }
+
+@media (max-width: 1100px) {
+    .sectionImage {
+        margin-top: 30%;
+    }
+}
